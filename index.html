@@ -286,6 +286,18 @@
   .floating-badge{left:0;bottom:96px}
   @media(max-width:939px){ .floating-badge{left:8px;bottom:90px} }
   .portrait-glow{display:none}
+  /* ---- testimonials (Instagram embed) ---- */
+  .ig-frame{max-width:600px;margin:0 auto;border-radius:26px;padding:3px;
+    background:linear-gradient(150deg,var(--purple),rgba(69,216,255,.6) 60%,rgba(206,255,4,.42));
+    box-shadow:0 40px 70px -30px rgba(0,0,0,.85)}
+  .ig-frame .instagram-media{margin:0 auto!important;border-radius:23px!important;min-width:auto!important;width:100%!important}
+  .ig-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:260px;
+    background:var(--surface);border-radius:23px;color:var(--ink);font-family:"Saira Semi Condensed",sans-serif;
+    font-weight:700;font-size:1.12rem;text-align:center;padding:44px 24px;text-decoration:none}
+  .ig-fallback .play{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;
+    background:linear-gradient(135deg,var(--purple),#7d28e0);color:#fff;font-size:1.4rem;margin-bottom:6px}
+  .ig-fallback small{display:block;color:var(--muted);font-family:"Saira",sans-serif;font-weight:400;font-size:.92rem;margin-top:4px}
+  .ig-cta{text-align:center;margin-top:24px}
 </style>
 </head>
 <body>
@@ -439,6 +451,32 @@
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials" style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">In Their Words</p>
+        <h2>What students &amp; parents say.</h2>
+        <p>Real stories from Chem-Ya students — straight from Instagram.</p>
+      </div>
+      <div class="ig-frame reveal">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DcRQBJUjdEb/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+          <a class="ig-fallback" href="https://www.instagram.com/p/DcRQBJUjdEb/" target="_blank" rel="noopener">
+            <span class="play" aria-hidden="true">▶</span>
+            Watch the student testimonials on Instagram
+            <small>Tap to play the video on @chemyateam</small>
+          </a>
+        </blockquote>
+      </div>
+      <div class="ig-cta reveal">
+        <a class="btn btn-ghost" href="https://www.instagram.com/chemyateam/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 4.54a5.3 5.3 0 1 0 0 10.6 5.3 5.3 0 0 0 0-10.6Zm0 8.74a3.44 3.44 0 1 1 0-6.88 3.44 3.44 0 0 1 0 6.88Zm6.75-8.94a1.24 1.24 0 1 1-2.48 0 1.24 1.24 0 0 1 2.48 0Z"/></svg>
+          See more on @chemyateam
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ESSENCE -->
   <section class="section" style="padding-top:12px">
     <div class="wrap">
@@ -481,6 +519,7 @@
     <div class="foot-links">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
       <a href="https://www.instagram.com/chemyateam/" target="_blank" rel="noopener">Instagram</a>
     </div>
@@ -518,5 +557,6 @@
     nums.forEach(function(n){io.observe(n)});
   })();
 </script>
+<script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
