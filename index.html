@@ -287,6 +287,9 @@
   @media(max-width:939px){ .floating-badge{left:8px;bottom:90px} }
   .portrait-glow{display:none}
   /* ---- testimonials (Instagram embed) ---- */
+  .ig-grid{display:grid;grid-template-columns:1fr;gap:24px;max-width:1000px;margin:0 auto;align-items:start}
+  .ig-grid .ig-frame{max-width:none;margin:0}
+  @media(min-width:860px){.ig-grid{grid-template-columns:1fr 1fr}}
   .ig-frame{max-width:600px;margin:0 auto;border-radius:26px;padding:3px;
     background:linear-gradient(150deg,var(--purple),rgba(69,216,255,.6) 60%,rgba(206,255,4,.42));
     box-shadow:0 40px 70px -30px rgba(0,0,0,.85)}
@@ -459,14 +462,25 @@
         <h2>What students &amp; parents say.</h2>
         <p>Real stories from Chem-Ya students — straight from Instagram.</p>
       </div>
-      <div class="ig-frame reveal">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DcRQBJUjdEb/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
-          <a class="ig-fallback" href="https://www.instagram.com/p/DcRQBJUjdEb/" target="_blank" rel="noopener">
-            <span class="play" aria-hidden="true">▶</span>
-            Watch the student testimonials on Instagram
-            <small>Tap to play the video on @chemyateam</small>
-          </a>
-        </blockquote>
+      <div class="ig-grid">
+        <div class="ig-frame reveal">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DcRQBJUjdEb/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+            <a class="ig-fallback" href="https://www.instagram.com/p/DcRQBJUjdEb/" target="_blank" rel="noopener">
+              <span class="play" aria-hidden="true">▶</span>
+              Watch a student testimonial on Instagram
+              <small>Tap to play the video on @chemyateam</small>
+            </a>
+          </blockquote>
+        </div>
+        <div class="ig-frame reveal">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DcgYNZLDUDH/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+            <a class="ig-fallback" href="https://www.instagram.com/p/DcgYNZLDUDH/" target="_blank" rel="noopener">
+              <span class="play" aria-hidden="true">▶</span>
+              Watch another student's story on Instagram
+              <small>Tap to play the video on @chemyateam</small>
+            </a>
+          </blockquote>
+        </div>
       </div>
       <div class="ig-cta reveal">
         <a class="btn btn-ghost" href="https://www.instagram.com/chemyateam/" target="_blank" rel="noopener">
